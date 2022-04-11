@@ -5,7 +5,8 @@ const buildPath = "./frontend/build";
 app.use(express.static(buildPath));
 
 app.get("/", (req, res) => {
-  res.sendFile(`${buildPath}/index.html`);
+  // res.sendFile(`${buildPath}/index.html`);
+  res.json({"hello": "jajajaja"});
 })
 
 const PORT = process.env.PORT || 3001;
