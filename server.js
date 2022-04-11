@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const buildPath = "./frontend/build";
+const buildPath = "./dist";
 app.use(express.static(buildPath));
 app.use(express.static(buildPath + "static/"));
 
