@@ -1,7 +1,10 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 
-const buildPath = "./dist";
+const DEPLOY = (parseInt(process.env.DEPLOY));
+const buildPath = DEPLOY ? "./dist" : "./frontend/build";
+
 app.use(express.static(buildPath));
 app.use(express.static(buildPath + "static/"));
 
