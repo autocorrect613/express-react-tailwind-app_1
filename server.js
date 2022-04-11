@@ -4,10 +4,10 @@ const path = require("path");
 
 const buildPath = "/frontend/build";
 app.use(express.static(path.join(__dirname, buildPath)));
+app.set('port', (process.env.PORT || 5000));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, buildPathm, "index.html"));
+  res.sendFile(path.join(__dirname, buildPath, "index.html"));
 })
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log("Listening to port ", PORT));
+app.listen(app.get('port'));
