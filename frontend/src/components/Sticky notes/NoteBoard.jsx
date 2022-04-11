@@ -10,7 +10,8 @@ const INPUT_DATA = {
     "pievienot jsx props navigācijā KATRAM ierakstam",
     "Izveidot drag-n-drop todo list, to savienojot DB, lai rūdis arī var likt piezīmes",
     "izveidot React stila routingu navigācijas joslai (express pagaidām būs tikai viens routs)",
-    "Izveidot log failu datu bāzē, kur redzami apdeiti latviski" 
+    "Izveidot log failu datu bāzē, kur redzami apdeiti latviski",
+    "sticky nav bar" 
   ],
   DONE: [
     "izveidot TODO user interface ar lapiņām",
