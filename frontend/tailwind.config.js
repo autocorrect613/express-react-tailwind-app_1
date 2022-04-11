@@ -1,10 +1,14 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js,jsx}",         // source folder
-    "./src/components/*.{js,jsx}"  // components folder
+    "./src/components/*.{js,jsx}",  // components folder
+    "./src/components/Sticky notes/*.{js,jsx}"  // components folder
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'NOTES-FONT': ["Architects Daughter, cursive"]
+    }
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
+  
 }
