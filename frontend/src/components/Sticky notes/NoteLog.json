@@ -1,14 +1,16 @@
 {
   "activeNotes": {
     "todo": [
+      "izveidot interfeisu, ar kuru var labot konfigurācijas failu pilnīgi visiem ierakstiem lapā, lai ne tikai izstrādātājs var labot ierakstus (tālā nākotnē arī noformējumam)",
       "savienoties ar mongoDB",
       "izveidot pirmo db modeli, lai notestētu kā Heroku sadarbojas ar mongoDB",
       "Izveidot drag-n-drop todo list, to savienojot DB, lai rūdis arī var likt piezīmes. Vajag arī izveidot atkritni",
       "izveidot React stila routingu navigācijas joslai (express pagaidām būs tikai viens routs)",
-      "sticky nav bar"
+      "sticky nav bar",
+      "nav-burgeris (drawers) nedarbojas, jo jsxā neesmu pievienojis skriptus. Labots, skriptu nebūs, jo daļu jau uzrakstīju pārtaisot dropdownus no vanilla.js uz react, izmantojot useState() hooks"
     ],
     "done": [
-      "dropdowns un nav-burgeris nedarbojas, jo jsxā neesmu pievienojis skriptus",
+      
       "izveidots json fails, ar kuru var globāli rediģēt visus ierakstus (to pēc tam ieliks datu bāzē)",
       "pilnīgi pārveidots viss iepriekšējais .ejs failu formāta saturs. Tagad pilnīgi viss ir atsevišķās mapītēs react komponentos",
       "izveidot dropdown, dropdown-horizontal un nav-item komponenti, izveidota ikonu bibliotēka no heroicon (tailwind)",
