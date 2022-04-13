@@ -1,9 +1,9 @@
 import './tailwind-output.css';
-import Navbar from './components/Navbar';
+import NavBar from "./components/navbar/NavBar";
 import MainContainer from './components/MainContainer';
 function App() {
   return (<>
-    <Navbar />
+    <NavBar />
     <MainContainer />
   </>);
 }

@@ -1,4 +1,3 @@
-
 export default function Note({
   description, 
   rotationClass, 

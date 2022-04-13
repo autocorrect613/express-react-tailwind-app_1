@@ -1,0 +1,42 @@
+{
+  "nav-bar": {
+    "row-1": {
+      "search-bar": {
+        "inner-text": {
+          "placeholder": "What are you looking for?",
+          "dropdown-btn": "Tracks",
+          "search-bar-dropdown-list": ["All", "Tracks", "Musicians", "Playlists", "Albums", "Sound Kits", "Servies"]
+        }
+      },
+      "nav-items": {
+        "inner-text": {
+          "btn-sign-up": "Sign up",
+          "btn-sign-in": "Sign in",
+          "btn-start-selling": "Start selling"
+        },
+        "img-src": {
+          "btn-logo": "https://www.beatstars.com/assets/img/bs-logos/logo-red.svg"
+        }
+      },
+      "drop-horizontal": {
+        "inner-text": {
+          "dropdown-btn-left": "Explore",
+          "dropdown-btn-right": "Creator",
+          "dropdown-list-left": [
+            ["Beats4Love", "Make a charitable difference with our music."], 
+            ["Gift Card", "Give the gift of a Pages subscription."], 
+            ["Wonderfull world", "Discover what's new in the Wonderfull world"]
+          ],
+          "dropdown-list-right": [
+            ["Music Distribution", "Release your music to all major digital music platforms", "statusOnline", "fill-green-400"], 
+            ["Music Publishing", "Start getting paid the royalities you're owed", "pencilAlt", "fill-purple-600"], 
+            ["Beat ME", "Track your music across social media with me", "share", "fill-red-600"]
+          ]
+        }
+      }
+    },
+    "row-2": {
+      "inner-text": ["Feed", "Tracks", "Distribution", "Publishing", "Beat ID", "Gift Cards"]
+    }
+  }
+}

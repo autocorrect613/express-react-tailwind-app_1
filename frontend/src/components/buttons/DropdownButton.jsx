@@ -1,0 +1,71 @@
+import { useState } from "react"
+
+/**
+ * 
+ * @param {Array}  innerContent Array of list items. Could be innerText, InnerHTML elements. Must be represented in array. For example: [<div>first</div>, <div>second</div>].
+ * @param {String} dropDownName will be used in "keys property". Can be any name except it can't be same as other dropdown name. For example: "dropdown_1".
+ * @param {String} btnClass tailwind classList for the *button*. For example: "flex bg-blue-400 text-white p-2".
+ * @param {String} menuClass tailwind classList for the *menu*. For example: "flex bg-blue-400 text-white p-2".
+ * @param {String} menuItemClass tailwind classList for each *menuItem*. For example: "flex bg-blue-400 text-white p-2".
+ * @returns 
+ */
+export default function DropdownButton({
+  dropDownName, 
+  innerContent, 
+  btnClass, 
+  menuClass, 
+  menuItemClass, 
+  iconRight,
+  bgColorBackDrop,
+  btnInnerText }){
+
+  /**
+   * Menu list item container - it shows up after user clicks on button (this is not the button)
+   */
+  function Menu() {
+    const backDropDiv = <div className={`fixed top-0 left-0 bottom-0 right-0 z-10 cursor-default ${bgColorBackDrop}`}></div>
+    let menuItemsList = [];
+    for (let i = 0; i < innerContent.length; i++) {
+      menuItemsList.push(
+        <MenuItem 
+          key={`${dropDownName}_${i}`}
+          innerText = {innerContent[i]}
+        />
+      );
+    }
+
+    return(
+      <>
+        {bgColorBackDrop && backDropDiv}
+        <div className={menuClass}> {menuItemsList}</div>
+      </>
+    );
+  }
+
+  /**
+   * Each item from Menu list described in previous function
+   * TODO: exted item with option to recursively use dropdowns in dropdowns
+   */
+  function MenuItem({innerText}) {
+    return(
+      <div className={menuItemClass}>
+        {innerText}
+      </div>);
+  }
+
+  /**
+   * Dropdown button, which, when clicked, opens Menu list. List closes
+   * after user by clicking selects item from the opened list or if user
+   * clicks somewhere else on screen
+   */
+  const [open, setOpen] = useState(false);
+  return(
+    <div 
+      className={btnClass}
+      onClick={() => setOpen(!open)}>{btnInnerText}
+      {iconRight}
+      {open && <Menu/>}
+    </div>  
+  );
+}
+

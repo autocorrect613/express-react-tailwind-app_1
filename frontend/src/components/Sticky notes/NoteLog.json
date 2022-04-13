@@ -1,0 +1,28 @@
+{
+  "activeNotes": {
+    "todo": [
+      "savienoties ar mongoDB",
+      "izveidot pirmo db modeli, lai notestētu kā Heroku sadarbojas ar mongoDB",
+      "Izveidot drag-n-drop todo list, to savienojot DB, lai rūdis arī var likt piezīmes. Vajag arī izveidot atkritni",
+      "izveidot React stila routingu navigācijas joslai (express pagaidām būs tikai viens routs)",
+      "sticky nav bar"
+    ],
+    "done": [
+      "dropdowns un nav-burgeris nedarbojas, jo jsxā neesmu pievienojis skriptus",
+      "izveidots json fails, ar kuru var globāli rediģēt visus ierakstus (to pēc tam ieliks datu bāzē)",
+      "pilnīgi pārveidots viss iepriekšējais .ejs failu formāta saturs. Tagad pilnīgi viss ir atsevišķās mapītēs react komponentos",
+      "izveidot dropdown, dropdown-horizontal un nav-item komponenti, izveidota ikonu bibliotēka no heroicon (tailwind)",
+      "pievienots jsx props navigācijā KATRAM ierakstam",
+      "Izveidot log failu datu bāzē, kur redzami apdeiti latviski"
+
+    ]
+  },
+  "note-history": [
+    "izveidot TODO user interface ar lapiņām",
+    "atjaunot source code linku",
+    "izveidot jaunu projektu un pārmainīt mapju, failu struktūru priekš react",
+    "pārveidot navigācijas EJS failu par komponentiem JSX failos",
+    "react un express abi reizē būs palaisti zem viena porta - izdomāt, kā menedžēt /build direktoriju (reģistrēt tailwind pirms vai pēc build vai kā citādi)",
+    "pārliecināties, vai un cik jaudīgi ir React routi salīdzinājumā ar express+ejs routiem"
+  ]
+}
