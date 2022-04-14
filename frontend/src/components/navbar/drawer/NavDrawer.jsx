@@ -12,7 +12,6 @@ const _btnText = ConfigData["nav-bar"]["row-1"]["nav-items"]["inner-text"];
 const _topData = ConfigData["nav-bar"]["row-2"]["inner-text"];
 const bottomDataPath = ConfigData["nav-bar"]["row-1"]["drop-horizontal"]["inner-text"];
 const _bottomData = [bottomDataPath["dropdown-btn-left"], bottomDataPath["dropdown-btn-right"]];
-const _logoSrc = ConfigData["nav-bar"]["row-1"]["nav-items"]["img-src"]["btn-logo"];
 
 export default function NavDrawer() {
   
@@ -21,7 +20,6 @@ export default function NavDrawer() {
   const TopSection = () => 
     <div className="flex gap-1 p-4 bg-neutral-900 items-center">
       <HeroIcons iconName="x" width="w-8" height="h-8" fillColor="fill-white hover:fill-red-500 cursor-pointer" />
-      <NavItem itemType="btnLogo" imgSrc={_logoSrc}/>
     </div>
 
   const MiddleSection = () =>
