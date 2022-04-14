@@ -1,5 +1,5 @@
 import NavItem from "./NavItem";
-import ConfigData from "../NavbarConfig.json"
+import ConfigData from "../../../config/NavbarConfig.json"
 import DropdownButton from "../../buttons/DropdownButton"
 import HeroIcons from "../../icons/Heroicons";
 
@@ -21,7 +21,7 @@ export default function NavSearchBar() {
         btnClass        = "hidden md:flex relative items-center justify-end text-xs text-neutral-400 bg-neutral-700 h-full rounded-r-full px-3 cursor-pointer whitespace-nowrap select-none"
         menuItemClass   = "hidden md:flex justify-between pr-8 pl-3 py-2 hover:text-white whitespace-nowrap select-none"
         menuClass       = "translate-y-9 absolute top-0 right-0 rounded-sm overflow-hidden shadow-sm shadow-neutral-800 z-10 select-none items-center text-xs text-neutral-400 bg-neutral-800"
-        bgColorBackDrop = "transparent"
+        bgColorBackDrop = "bg-transparent"
         btnInnerText    = {_["inner-text"]["dropdown-btn"]}
       />
     </form>

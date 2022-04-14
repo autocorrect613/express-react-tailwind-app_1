@@ -1,12 +1,13 @@
 import NavItem from "../row 1/NavItem";
-import ConfigData from "../NavbarConfig.json"
+import ConfigData from "../../../config/NavbarConfig.json"
+import NavDrawer from "../drawer/NavDrawer";
 
-export default function NavbarRow1() {
+export default function NavbarRow0() {
   const _ = ConfigData["nav-bar"]["row-1"]["nav-items"];
   return(    
     <div className="flex justify-between md:hidden px-4 pt-3">
       <div className="flex items-center gap-2">
-        <NavItem itemType="navBurger" />
+        <NavDrawer />
       <div className="flex md:hidden">
         <NavItem itemType="btnLogo" imgSrc={_["img-src"]["btn-logo"]}/>
       </div>

@@ -1,5 +1,5 @@
 
-import ConfigData from "../NavbarConfig.json"
+import ConfigData from "../../../config/NavbarConfig.json"
 
 export default function NavbarRow2() { 
   const _ = ConfigData["nav-bar"]["row-2"];
